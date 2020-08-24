@@ -1,0 +1,50 @@
+{
+  "name": "@mrbatista/passport-apple-token",
+  "version": "0.0.0-development",
+  "description": "Passport strategy for authenticating with Apple via identity token",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "coveralls": "cat coverage/lcov.info | coveralls",
+    "semantic-release": "semantic-release",
+    "test": "babel-node ./node_modules/.bin/isparta cover _mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrbatista/passport-apple-token.git"
+  },
+  "keywords": [
+    "passport",
+    "apple",
+    "token",
+    "auth",
+    "authentication"
+  ],
+  "author": "Matteo Padovano <mrbatista@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrbatista/passport-apple-token/issues"
+  },
+  "homepage": "https://github.com/mrbatista/passport-apple-token",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^1.9.0",
+    "passport-oauth": "^1.0.0"
+  },
+  "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.1.1",
+    "chai-passport-strategy": "^1.0.1",
+    "coveralls": "^3.0.8",
+    "isparta": "^4.1.1",
+    "mocha": "^7.0.1",
+    "semantic-release": "^17.1.1",
+    "sinon": "^9.0.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
